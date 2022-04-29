@@ -11,9 +11,15 @@
  * make sure we're resetting all spacing elements.
  *
  */
+
+ @font-face {
+  font-family: vcr-osd-mono;
+  src: url(../public/VCR_OSD_MONO.ttf);
+}
+
  html, body {
 	border: 0;
-	font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+	font-family: "vcr-osd-mono", "Helvetica-Neue", "Helvetica", Arial, sans-serif;
 	line-height: 1.5;
 	margin: 0;
 	padding: 0;

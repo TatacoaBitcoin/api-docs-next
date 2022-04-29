@@ -6,18 +6,24 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Tatacoa Bitcoin API</title>
-        <meta name="description" content="Tatacoa Bitcoin API Documentation" />
+        <title>Docs | API Tatacoa Bitcoin</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1>Tatacoa Bitcoin API</h1>
-
-        <p>Hello World</p>
+      <main>
+        <div className={styles.header}>
+          <Image
+            className={styles.logo}
+            src="/logo-s.png"
+            alt="logo"
+            width={100}
+            height={100}
+          />
+          <h1>Tatacoa Bitcoin API</h1>
+        </div>
       </main>
 
-      <footer>Tatacoa Bitcoin 2022</footer>
+      <footer className={styles.footer}>Tatacoa Bitcoin 2022</footer>
     </div>
   );
 }
