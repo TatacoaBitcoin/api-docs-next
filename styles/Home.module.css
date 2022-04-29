@@ -25,6 +25,12 @@
   line-height: 1.7;
 }
 
+.container h1, .container h2, .container h3, .container h4   {
+  font-family: vcr-osd-mono;
+  font-weight: bold;
+
+}
+
 .section {
   margin-top: 40px;
   padding: 0 20px;
