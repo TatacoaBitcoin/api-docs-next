@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -11,7 +13,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className={styles.header}>
+        <header className={styles.header}>
           <Image
             className={styles.logo}
             src="/logo-s.png"
@@ -20,6 +22,18 @@ export default function Home() {
             height={100}
           />
           <h1>Tatacoa Bitcoin API</h1>
+        </header>
+
+        <div className={styles.container}>
+          <section className={styles.section}>
+            <h2>Autenticación</h2>
+            <p>
+              Todas la peticiones al API de Tatacoa Bitcoin deben autenticarse.
+              Para esto se debe enviar en el header{" "}
+              <span className={styles.code}>apikey</span> el token de
+              autenticación recibido.
+            </p>
+          </section>
         </div>
       </main>
 

@@ -20,6 +20,24 @@
   width: 100px;
 }
 
+.container {
+  font-family: monospace;
+  line-height: 1.7;
+}
+
+.section {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.code {
+  font-family: monospace;
+  background: #f4f4f4;
+  color: #b73d3d;
+  padding: 2px 3px;
+  border-radius: 3px;
+}
+
 .footer {
   padding: 1rem;
   background-color: lightgray;
