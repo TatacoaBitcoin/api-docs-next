@@ -26,14 +26,14 @@ export default function Home() {
           <h1>Tatacoa Bitcoin API</h1>
         </header>
 
-        <Container className="p-5">
+        <Container className="pb-5 px-0 p-sm-5">
           <section className={styles.section}>
             <h2>Autenticación</h2>
             <p>
               Todas la peticiones al API de Tatacoa Bitcoin deben autenticarse.
-              Para esto se debe enviar en el header{" "}
-              <span className={styles.code}>apikey</span> el token de
-              autenticación recibido.
+              Para esto se debe enviar en el header las credenciales recibidas{" "}
+              <span className={styles.code}>apiid</span> y{" "}
+              <span className={styles.code}>apikey</span>.
             </p>
           </section>
 
