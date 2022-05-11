@@ -5,7 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 import styles from "../styles/Home.module.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Hero from "../src/organisms/Hero";
 
 const en = () => {
   return (
@@ -16,16 +16,7 @@ const en = () => {
       </Head>
 
       <main>
-        <header className={styles.header}>
-          <Image
-            className={styles.logo}
-            src="/logo-s.png"
-            alt="logo"
-            width={100}
-            height={100}
-          />
-          <h1>Tatacoa Bitcoin API</h1>
-        </header>
+        <Hero />
 
         <Container className="pb-5 px-0 p-sm-5">
           <section className={styles.section}>
