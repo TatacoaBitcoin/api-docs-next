@@ -23,7 +23,7 @@ const en = () => {
             <h2>Authentication</h2>
             <p>
               Every request to the Tatacoa Bitcoin API must be authenticated.
-              For this reason, header must include the provided credentials for{" "}
+              For this reason, provided credentials must be included using the headers{" "}
               <span className={styles.code}>apiid</span> and{" "}
               <span className={styles.code}>apikey</span>.
             </p>

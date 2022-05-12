@@ -20,7 +20,7 @@ export default function Home() {
             <h2>Autenticación</h2>
             <p>
               Todas la peticiones al API de Tatacoa Bitcoin deben autenticarse.
-              Para esto se debe enviar en el header las credenciales recibidas{" "}
+              Para esto se deben enviar las credenciales recibidas usando los headers{" "}
               <span className={styles.code}>apiid</span> y{" "}
               <span className={styles.code}>apikey</span>.
             </p>
