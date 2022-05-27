@@ -20,8 +20,8 @@ export default function Home() {
             <h2>Autenticación</h2>
             <p>
               Todas la peticiones al API de Tatacoa Bitcoin deben autenticarse.
-              Para esto se deben enviar las credenciales recibidas usando los headers{" "}
-              <span className={styles.code}>apiid</span> y{" "}
+              Para esto se deben enviar las credenciales recibidas usando los
+              headers <span className={styles.code}>apiid</span> y{" "}
               <span className={styles.code}>apikey</span>.
             </p>
           </section>
@@ -56,6 +56,7 @@ export default function Home() {
     "amount": 250,
     "currency": "COP",
     "description": "tatacoa bitcoin invoice",
+    "fee": "0.025",
     "webhook": "https://webhook.com"
   }
           `}</code>
@@ -205,6 +206,7 @@ export default function Home() {
     "amount": 100,
     "currency": "COP",
     "description": "tatacoa bitcoin gift"
+    "fee": "0.025",
   }
           `}</code>
             </pre>

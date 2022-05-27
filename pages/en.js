@@ -23,8 +23,8 @@ const en = () => {
             <h2>Authentication</h2>
             <p>
               Every request to the Tatacoa Bitcoin API must be authenticated.
-              For this reason, provided credentials must be included using the headers{" "}
-              <span className={styles.code}>apiid</span> and{" "}
+              For this reason, provided credentials must be included using the
+              headers <span className={styles.code}>apiid</span> and{" "}
               <span className={styles.code}>apikey</span>.
             </p>
           </section>
@@ -55,12 +55,13 @@ const en = () => {
             <h4>Payload</h4>
             <pre>
               <code>{`
-{
-  "amount": 5,
-  "currency": "USD",
-  "description": "tatacoa bitcoin invoice",
-  "webhook": "https://webhook.com"
-}
+  {
+    "amount": 5,
+    "currency": "USD",
+    "description": "tatacoa bitcoin invoice",
+    "fee": "0.025",
+    "webhook": "https://webhook.com"
+  }
         `}</code>
             </pre>
 
@@ -131,9 +132,9 @@ const en = () => {
             <h4>Payload</h4>
             <pre>
               <code>{`
-{
-  "invoice": "lnbc1150n1p3qhh...3pf2gpe3g2usn0qcz49gq6nqwxw"
-}
+  {
+    "invoice": "lnbc1150n1p3qhh...3pf2gpe3g2usn0qcz49gq6nqwxw"
+  }
         `}</code>
             </pre>
 
@@ -204,11 +205,12 @@ const en = () => {
             <h4>Payload</h4>
             <pre>
               <code>{`
-{
-  "amount": 10,
-  "currency": "USD",
-  "description": "tatacoa bitcoin gift"
-}
+  {
+    "amount": 10,
+    "currency": "USD",
+    "description": "tatacoa bitcoin gift",
+    "fee": "0.025",
+  }
         `}</code>
             </pre>
 
